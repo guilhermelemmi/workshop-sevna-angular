@@ -1,0 +1,66 @@
+body {
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: #3c3d4f;
+  padding: 15px;
+}
+
+header img {
+  align-self: center;
+}
+
+header h1 {
+  align-self: center;
+  font-size: 24px;
+  color: #ddd;
+}
+
+form {
+  text-align: center;
+  margin: 20px;
+}
+
+ul.facts-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.facts-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  color: rgb(61, 61, 61);
+}
+
+ul.facts-list li img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  border: 1px solid black;
+  background-color: white;
+  width: 120px;
+  height: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+select {
+  width: 120px;
+  height: 30px;
+  margin-right: 40px;
+}
+
+.formContainer {
+  margin: 5px;
+  padding: 20px;
+}

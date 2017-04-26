@@ -1,0 +1,18 @@
+<div>
+  <form ng-submit="vm.getFact()">   
+    Category: 
+    <select ng-options="category for category in vm.categoriesList"
+            ng-model="vm.selectedCategory">
+      <option value="">None</option>
+    </select>
+    <input class="btn-primary" type="submit" value="Get a Fact">
+    <input class="btn-primary" type="button" value="Sort Facts" ng-click="vm.sortFacts()">
+    <input class="btn-primary" type="button" value="Clean Facts" ng-click="vm.cleanFacts()">
+  </form>
+  <ul class="facts-list">
+    <li ng-repeat="fact in vm.factsList">
+        <img ng-src="{{fact.category ? 'images/' + fact.category + '.svg' : fact.icon_url}}" />
+        <span>Fact: {{fact.value}}</span>
+    </li>
+  </ul> 
+</div>
